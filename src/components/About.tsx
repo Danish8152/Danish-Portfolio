@@ -3,8 +3,8 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const skills = [
-    "React", "TypeScript", "Node.js", "Python", "PostgreSQL", 
-    "AWS", "Docker", "GraphQL", "Tailwind CSS", "Next.js"
+    "HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", 
+    "WordPress", "Git", "GitHub", "Figma"
   ];
 
   return (
@@ -15,33 +15,34 @@ const About = () => {
             About <span className="text-gradient">Me</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Passionate developer with 5+ years of experience building scalable web applications
+            BCA Student passionate about web development and problem-solving
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg mb-6 leading-relaxed">
-              I'm a full-stack developer who loves turning complex problems into simple, 
-              beautiful solutions. With expertise in modern web technologies, I create 
-              applications that are not only functional but also provide exceptional user experiences.
+              I'm a final year BCA student at YMCA University (2022-25) with a passion for 
+              full-stack web development. I love turning complex problems into simple, 
+              beautiful solutions using modern web technologies.
             </p>
             <p className="text-lg mb-8 leading-relaxed">
-              When I'm not coding, you'll find me exploring new technologies, contributing to 
-              open-source projects, or sharing knowledge through technical writing and mentoring.
+              My expertise spans across frontend and backend development, and I'm always 
+              eager to learn new technologies and work on challenging projects that make 
+              a positive impact.
             </p>
             
             <div className="grid grid-cols-2 gap-6">
               <Card className="card-hover">
                 <CardContent className="p-6 text-center">
-                  <h3 className="text-2xl font-bold text-primary mb-2">50+</h3>
-                  <p className="text-muted-foreground">Projects Completed</p>
+                  <h3 className="text-2xl font-bold text-primary mb-2">10+</h3>
+                  <p className="text-muted-foreground">Projects Built</p>
                 </CardContent>
               </Card>
               <Card className="card-hover">
                 <CardContent className="p-6 text-center">
-                  <h3 className="text-2xl font-bold text-primary mb-2">5+</h3>
-                  <p className="text-muted-foreground">Years Experience</p>
+                  <h3 className="text-2xl font-bold text-primary mb-2">2025</h3>
+                  <p className="text-muted-foreground">Expected Graduate</p>
                 </CardContent>
               </Card>
             </div>

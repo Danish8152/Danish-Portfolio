@@ -2,6 +2,8 @@ import Navigation from "@/components/Navigation";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Projects from "@/components/Projects";
+import Certificates from "@/components/Certificates";
+import Resume from "@/components/Resume";
 import Contact from "@/components/Contact";
 
 const Index = () => {
@@ -12,12 +14,14 @@ const Index = () => {
         <Hero />
         <About />
         <Projects />
+        <Certificates />
+        <Resume />
         <Contact />
       </main>
       
       <footer className="border-t border-border py-8">
         <div className="container mx-auto px-4 text-center text-muted-foreground">
-          <p>&copy; 2024 Alex Johnson. Built with React, TypeScript & Tailwind CSS.</p>
+          <p>&copy; 2024 Your Name. Built with React, TypeScript & Tailwind CSS.</p>
         </div>
       </footer>
     </div>

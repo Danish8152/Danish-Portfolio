@@ -8,6 +8,8 @@ const Navigation = () => {
   const navItems = [
     { name: "About", href: "#about" },
     { name: "Projects", href: "#projects" },
+    { name: "Certificates", href: "#certificates" },
+    { name: "Resume", href: "#resume" },
     { name: "Contact", href: "#contact" },
   ];
 
@@ -16,7 +18,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="font-bold text-xl">
-            <span className="text-gradient">AJ</span>
+            <span className="text-gradient">Portfolio</span>
           </div>
 
           {/* Desktop Navigation */}

@@ -6,34 +6,34 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with real-time inventory, payment processing, and admin dashboard.",
+      title: "Quiz Website",
+      description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
       image: "/placeholder.svg",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
+      tags: ["React", "Node.js", "MongoDB"],
       github: "#",
       live: "#"
     },
     {
-      title: "Task Management App",
-      description: "Collaborative project management tool with real-time updates, file sharing, and team analytics.",
+      title: "LifeFlow - Blood Donation System",
+      description: "Complete blood donation management system connecting donors with recipients, featuring real-time availability and appointment scheduling.",
       image: "/placeholder.svg", 
-      tags: ["Next.js", "TypeScript", "Prisma", "WebSocket"],
+      tags: ["React", "Node.js", "MongoDB", "Express"],
       github: "#",
       live: "#"
     },
     {
-      title: "Data Visualization Dashboard",
-      description: "Interactive dashboard for analyzing business metrics with customizable charts and reports.",
+      title: "Amazon Homepage Clone",
+      description: "Pixel-perfect responsive clone of Amazon's homepage showcasing advanced CSS skills and attention to detail.",
       image: "/placeholder.svg",
-      tags: ["React", "D3.js", "Python", "FastAPI"],
+      tags: ["HTML", "CSS", "JavaScript"],
       github: "#",
       live: "#"
     },
     {
-      title: "AI Content Generator",
-      description: "SaaS platform leveraging AI to generate marketing content with custom brand voice training.",
+      title: "AI Medical Assistant",
+      description: "Intelligent medical assistant providing preliminary health consultations and symptom analysis using AI technology.",
       image: "/placeholder.svg",
-      tags: ["Next.js", "OpenAI", "Supabase", "Tailwind"],
+      tags: ["React", "Node.js", "AI/ML", "MongoDB"],
       github: "#",
       live: "#"
     }
