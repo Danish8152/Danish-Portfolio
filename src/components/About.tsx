@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const skills = [
-    "HTML", "CSS", "JavaScript", "React", "Node.js", "MongoDB", 
+    "HTML", "CSS", "JavaScript", "React.js", "Node.js", "MongoDB", 
     "WordPress", "Git", "GitHub", "Figma"
   ];
 
@@ -14,15 +14,15 @@ const About = () => {
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
             About <span className="text-gradient">Me</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            BCA Student passionate about web development and problem-solving
+          <p className="text-xl text-muted-foreground max-w-2x2 mx-auto">
+            BCA Graduate passionate about full stack web development and problem-solving
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
             <p className="text-lg mb-6 leading-relaxed">
-              I'm a final year BCA student at YMCA University (2022-25) with a passion for 
+              I'm a BCA Graduate  form <b>J.C Bose University of Science and Technologywith</b> a passion for 
               full-stack web development. I love turning complex problems into simple, 
               beautiful solutions using modern web technologies.
             </p>
@@ -42,7 +42,7 @@ const About = () => {
               <Card className="card-hover">
                 <CardContent className="p-6 text-center">
                   <h3 className="text-2xl font-bold text-primary mb-2">2025</h3>
-                  <p className="text-muted-foreground">Expected Graduate</p>
+                  <p className="text-muted-foreground">Graduated</p>
                 </CardContent>
               </Card>
             </div>

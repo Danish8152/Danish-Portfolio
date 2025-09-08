@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Github, Linkedin, Mail, MapPin } from "lucide-react";
+import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -21,7 +21,7 @@ const Contact = () => {
           <div>
             <h3 className="text-2xl font-bold mb-6">Let's work together</h3>
             <p className="text-lg text-muted-foreground mb-8">
-              I'm actively seeking internship opportunities and freelance projects. 
+              I'm actively seeking internship and Job opportunities and freelance projects. 
               Whether you have a project in mind or just want to discuss technology, 
               I'd love to connect with you.
             </p>
@@ -33,7 +33,17 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Email</h4>
-                  <p className="text-muted-foreground">alex.johnson@email.com</p>
+                  <p className="text-muted-foreground">mohddanish8152@gmail.com</p>
+                </div>
+              </div>
+
+              <div className="flex items-center gap-4">
+                <div className="bg-primary/10 p-3 rounded-lg">
+                  <Phone className="h-6 w-6 text-primary" />
+                </div>
+                <div>
+                  <h4 className="font-semibold">Contact</h4>
+                  <p className="text-muted-foreground">+91 9540848152</p>
                 </div>
               </div>
               
@@ -43,7 +53,7 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-semibold">Location</h4>
-                  <p className="text-muted-foreground">India</p>
+                  <p className="text-muted-foreground">New Delhi</p>
                 </div>
               </div>
             </div>

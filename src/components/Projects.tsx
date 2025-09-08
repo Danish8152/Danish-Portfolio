@@ -6,7 +6,7 @@ import { Github, ExternalLink } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "Quiz Website",
+      title: " QuickQuiz - Quiz Platform",
       description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
       image: "/placeholder.svg",
       tags: ["React", "Node.js", "MongoDB"],
@@ -51,7 +51,7 @@ const Projects = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-20 mx-12">
           {projects.map((project, index) => (
             <Card key={index} className="card-hover gradient-border">
               <CardHeader>

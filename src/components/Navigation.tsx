@@ -13,6 +13,22 @@ const Navigation = () => {
     { name: "Contact", href: "#contact" },
   ];
 
+  const handleDownloadAndOpen = () => {
+    console.log("working")
+    const fileUrl = "/Danish_Resume_compressed.pdf"; //resume path (public folder)
+
+    // Trigger download
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Danish-Resume.pdf"; // downloaded with this name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Open in new tab
+    window.open(fileUrl, "_blank");
+  };
+
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-md border-b border-border">
       <div className="container mx-auto px-4">
@@ -32,8 +48,8 @@ const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button size="sm" className="glow-on-hover">
-              Resume
+            <Button size="sm" className="glow-on-hover" onClick={handleDownloadAndOpen}>
+              Get Resume
             </Button>
           </div>
 

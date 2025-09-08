@@ -3,15 +3,20 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Download, Eye, FileText } from "lucide-react";
 
 const Resume = () => {
-  const handleDownload = () => {
-    // In a real implementation, this would download the actual PDF
-    // For now, we'll show an alert
-    alert("Resume download would start here. Please upload your actual resume PDF to implement this feature.");
-  };
+  const handleDownloadAndOpen = () => {
+    console.log("working")
+    const fileUrl = "/Danish_Resume_compressed.pdf"; // resume path (public folder)
 
-  const handlePreview = () => {
-    // In a real implementation, this would open the PDF in a new tab
-    alert("Resume preview would open here. Please upload your actual resume PDF to implement this feature.");
+    // Trigger download
+    const link = document.createElement("a");
+    link.href = fileUrl;
+    link.download = "Danish-Resume.pdf"; // downloaded with this name
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+
+    // Open in new tab
+    window.open(fileUrl, "_blank");
   };
 
   return (
@@ -40,18 +45,20 @@ const Resume = () => {
             <CardContent>
               <div className="grid sm:grid-cols-2 gap-4">
                 <Button 
+                  asChild={false}
                   size="lg" 
-                  className="glow-on-hover w-full" 
-                  onClick={handleDownload}
+                  className="glow-on-hover w-full relative z-50" 
+                  onClick={handleDownloadAndOpen}
                 >
                   <Download className="mr-2 h-5 w-5" />
                   Download Resume
                 </Button>
-                <Button 
+                <Button
+                  asChild={false} 
                   variant="outline" 
                   size="lg" 
-                  className="glow-on-hover w-full" 
-                  onClick={handlePreview}
+                  className="glow-on-hover w-full relative z-50" 
+                  onClick={handleDownloadAndOpen}
                 >
                   <Eye className="mr-2 h-5 w-5" />
                   Preview Resume
