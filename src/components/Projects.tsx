@@ -34,24 +34,24 @@ const Projects = () => {
       description: "Pixel-perfect responsive clone of whatsApp Web clone showcasing advanced CSS skills and attention to detail.",
       image: "/placeholder.svg",
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/Danish8152/WhatsApp-Web",
+      live: "https://whats-app-web-ten.vercel.app"
     },
     {
       title: "Netflix Homepage Clone",
       description: "Pixel-perfect responsive clone of Netflix's homepage showcasing advanced CSS skills and attention to detail.",
       image: "/placeholder.svg",
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/Danish8152/Netflix-Clone",
+      live: "https://netflix-clone-kappa-puce-30.vercel.app"
     },
     {
       title: "Amazon Homepage Clone",
       description: "Pixel-perfect responsive clone of Amazon's homepage showcasing advanced CSS skills and attention to detail.",
       image: "/placeholder.svg",
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/Danish8152/Amazon-clone",
+      live: "https://incandescent-halva-fc479e.netlify.app"
     }
   ];
   
@@ -87,11 +87,11 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="flex-1 relative z-50">
+                  <Button variant="outline" size="sm" className="flex-1 relative z-50" onClick={()=> window.open(project.github, "_blank")}>
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button size="sm" className="flex-1 glow-on-hover relative z-50">
+                  <Button size="sm" className="flex-1 glow-on-hover relative z-50" onClick={()=> window.open(project.live, "_blank")}>
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </Button>
