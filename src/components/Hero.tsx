@@ -2,16 +2,28 @@ import { Button } from "@/components/ui/button";
 import { ArrowDown, Github, Linkedin, Mail } from "lucide-react";
 
 const Hero = () => {
+  const openGmail = () => {
+    const email = "mohddanish8152@gmail.com"; // your email
+    const subject = "Hello from Website";
+    const body = "I want to contact you regarding...";
+
+    const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.open(url, "_blank");
+  };
+
   return (
     <section className="min-h-screen flex items-center justify-center px-4">
       <div className="container mx-auto text-center">
         <div className="animate-float">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
             Hi, I'm{" "}
-            <span className="text-gradient">Alex Johnson</span>
+            <span className="text-gradient">Danish</span>
           </h1>
-          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto">
-            Final Year BCA Student | Full-Stack Web Developer
+          <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3x2 mx-auto">
+            Bachelor of Computer Application(BCA) Graduate | Full-Stack Web Developer
           </p>
         </div>
         
@@ -32,7 +44,7 @@ const Hero = () => {
           <Button variant="ghost" size="icon" className="glow-on-hover">
             <Linkedin className="h-6 w-6" />
           </Button>
-          <Button variant="ghost" size="icon" className="glow-on-hover">
+          <Button variant="ghost" size="icon" className="glow-on-hover" onClick={openGmail}>
             <Mail className="h-6 w-6" />
           </Button>
         </div>
