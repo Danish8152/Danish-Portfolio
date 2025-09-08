@@ -22,22 +22,39 @@ const Projects = () => {
       live: "#"
     },
     {
-      title: "Amazon Homepage Clone",
-      description: "Pixel-perfect responsive clone of Amazon's homepage showcasing advanced CSS skills and attention to detail.",
-      image: "/placeholder.svg",
-      tags: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      live: "#"
-    },
-    {
       title: "AI Medical Assistant",
       description: "Intelligent medical assistant providing preliminary health consultations and symptom analysis using AI technology.",
       image: "/placeholder.svg",
       tags: ["React", "Node.js", "AI/ML", "MongoDB"],
       github: "#",
       live: "#"
+    },
+    {
+      title: "whatsApp Web clone",
+      description: "Pixel-perfect responsive clone of whatsApp Web clone showcasing advanced CSS skills and attention to detail.",
+      image: "/placeholder.svg",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "#",
+      live: "#"
+    },
+    {
+      title: "Netflix Homepage Clone",
+      description: "Pixel-perfect responsive clone of Netflix's homepage showcasing advanced CSS skills and attention to detail.",
+      image: "/placeholder.svg",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "#",
+      live: "#"
+    },
+    {
+      title: "Amazon Homepage Clone",
+      description: "Pixel-perfect responsive clone of Amazon's homepage showcasing advanced CSS skills and attention to detail.",
+      image: "/placeholder.svg",
+      tags: ["HTML", "CSS", "JavaScript"],
+      github: "#",
+      live: "#"
     }
   ];
+  
 
   return (
     <section id="projects" className="py-20 px-4">
@@ -70,11 +87,11 @@ const Projects = () => {
                   ))}
                 </div>
                 <div className="flex gap-4">
-                  <Button variant="outline" size="sm" className="flex-1">
+                  <Button variant="outline" size="sm" className="flex-1 relative z-50">
                     <Github className="mr-2 h-4 w-4" />
                     Code
                   </Button>
-                  <Button size="sm" className="flex-1 glow-on-hover">
+                  <Button size="sm" className="flex-1 glow-on-hover relative z-50">
                     <ExternalLink className="mr-2 h-4 w-4" />
                     Live Demo
                   </Button>
