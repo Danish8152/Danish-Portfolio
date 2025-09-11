@@ -22,8 +22,8 @@ const Projects = () => {
       live: "#"
     },
     {
-      title: "AI Medical Assistant",
-      description: "Intelligent medical assistant providing preliminary health consultations and symptom analysis using AI technology.",
+      title: "SkilSwap - Learning Platform",
+      description: "SkillSwap is an innovative learning platform where users can register their skills and connect with others who want to learn from them.",
       image: "/placeholder.svg",
       tags: ["React", "Node.js", "AI/ML", "MongoDB"],
       github: "#",
