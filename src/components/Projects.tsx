@@ -32,7 +32,7 @@ const Projects = () => {
     {
       title: "whatsApp Web clone",
       description: "Pixel-perfect responsive clone of whatsApp Web clone showcasing advanced CSS skills and attention to detail.",
-      image: "/placeholder.svg",
+      image: "/whatsApp-brPic.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Danish8152/WhatsApp-Web",
       live: "https://whats-app-web-ten.vercel.app"
@@ -40,7 +40,7 @@ const Projects = () => {
     {
       title: "Netflix Homepage Clone",
       description: "Pixel-perfect responsive clone of Netflix's homepage showcasing advanced CSS skills and attention to detail.",
-      image: "/placeholder.svg",
+      image: "/NetFlix.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Danish8152/Netflix-Clone",
       live: "https://netflix-clone-kappa-puce-30.vercel.app"
@@ -48,7 +48,7 @@ const Projects = () => {
     {
       title: "Amazon Homepage Clone",
       description: "Pixel-perfect responsive clone of Amazon's homepage showcasing advanced CSS skills and attention to detail.",
-      image: "/placeholder.svg",
+      image: "/Amazon.png",
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Danish8152/Amazon-clone",
       live: "https://incandescent-halva-fc479e.netlify.app"
@@ -72,7 +72,9 @@ const Projects = () => {
           {projects.map((project, index) => (
             <Card key={index} className="card-hover gradient-border">
               <CardHeader>
-                <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary-glow/20 rounded-lg mb-4"></div>
+                <div className="aspect-video bg-gradient-to-br from-primary/20 to-primary-glow/20 rounded-lg mb-4">
+                <img src={project.image} alt="" />
+                </div>
                 <CardTitle className="text-xl">{project.title}</CardTitle>
                 <CardDescription className="text-base">
                   {project.description}
