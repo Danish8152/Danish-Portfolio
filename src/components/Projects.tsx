@@ -26,8 +26,8 @@ const Projects = () => {
       description: "SkillSwap is an innovative learning platform where users can register their skills and connect with others who want to learn from them.",
       image: "/SkillSwap.png",
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/Danish8152/Skill-Swap",
+      live: "https://skill-swap-ten-theta.vercel.app"
     },
     {
       title: "whatsApp Web clone",
