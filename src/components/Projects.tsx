@@ -8,7 +8,7 @@ const Projects = () => {
     {
       title: " QuickQuiz - Quiz Platform",
       description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
-      image: "/placeholder.svg",
+      image: "/update.png",
       tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
       github: "#",
       live: "#"
@@ -16,7 +16,7 @@ const Projects = () => {
     {
       title: "LifeFlow - Blood Donation System",
       description: "Complete blood donation management system connecting donors with recipients, featuring real-time availability and appointment scheduling.",
-      image: "/placeholder.svg", 
+      image: "/update.png", 
       tags: ["HTML", "CSS", "JavaScript"],
       github: "#",
       live: "#"
