@@ -9,7 +9,7 @@ const Projects = () => {
       title: " QuickQuiz - Quiz Platform",
       description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
       image: "/placeholder.svg",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
       github: "#",
       live: "#"
     },
@@ -17,15 +17,15 @@ const Projects = () => {
       title: "LifeFlow - Blood Donation System",
       description: "Complete blood donation management system connecting donors with recipients, featuring real-time availability and appointment scheduling.",
       image: "/placeholder.svg", 
-      tags: ["React", "Node.js", "MongoDB", "Express"],
+      tags: ["HTML", "CSS", "JavaScript"],
       github: "#",
       live: "#"
     },
     {
       title: "SkilSwap - Learning Platform",
       description: "SkillSwap is an innovative learning platform where users can register their skills and connect with others who want to learn from them.",
-      image: "/placeholder.svg",
-      tags: ["React", "Node.js", "AI/ML", "MongoDB"],
+      image: "/SkillSwap.png",
+      tags: ["HTML", "CSS", "JavaScript"],
       github: "#",
       live: "#"
     },
