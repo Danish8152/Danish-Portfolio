@@ -5,6 +5,17 @@ import { Textarea } from "@/components/ui/textarea";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
+  const openGmail = () => {
+    const email = "mohddanish8152@gmail.com"; // your email
+    const subject = "Hello from Website";
+    const body = "I want to contact you regarding...";
+
+    const url = `https://mail.google.com/mail/?view=cm&fs=1&to=${email}&su=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    window.open(url, "_blank");
+  };
   return (
     <section id="contact" className="py-20 px-4">
       <div className="container mx-auto">
@@ -65,7 +76,7 @@ const Contact = () => {
               <Button variant="outline" size="icon" className="glow-on-hover">
                 <Linkedin className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon" className="glow-on-hover">
+              <Button variant="outline" size="icon" className="glow-on-hover" onClick={openGmail}>
                 <Mail className="h-5 w-5" />
               </Button>
             </div>
