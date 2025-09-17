@@ -2,15 +2,16 @@ import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/com
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Github, ExternalLink } from "lucide-react";
+import QuickQuiz from "/QuickQuiz.png"
 
 const Projects = () => {
   const projects = [
     {
       title: " QuickQuiz - Quiz Platform",
       description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
-      image: "/update.png",
+      image: QuickQuiz,
       tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
-      github: "#",
+      github: "QuickQuiz.png",
       live: "#"
     },
     {
