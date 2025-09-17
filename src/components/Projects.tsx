@@ -11,8 +11,8 @@ const Projects = () => {
       description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
       image: QuickQuiz,
       tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
-      github: "QuickQuiz.png",
-      live: "#"
+      github: "https://github.com/Danish8152/QuickQuiz",
+      live: "https://quick-quiz-puce.vercel.app"
     },
     {
       title: "LifeFlow - Blood Donation System",
