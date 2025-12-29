@@ -16,7 +16,7 @@ const Projects = () => {
     },
     {
       title: "NextStep AI - AI Driven Career Platform",
-      description: "Complete blood donation management system connecting donors with recipients, featuring real-time availability and appointment scheduling.",
+      description: "Transform your career aspirations into reality with personalized AI guidance, curated learning paths, and comprehensive skill development.",
       image: "/nextstep.jpeg", 
       tags: ["HTML", "CSS", "JavaScript"],
       github: "https://github.com/Danish8152/NextStep-AI",
