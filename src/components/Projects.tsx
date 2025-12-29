@@ -15,12 +15,12 @@ const Projects = () => {
       live: "https://quick-quiz-puce.vercel.app"
     },
     {
-      title: "LifeFlow - Blood Donation System",
+      title: "NextStep AI - AI Driven Career Platform",
       description: "Complete blood donation management system connecting donors with recipients, featuring real-time availability and appointment scheduling.",
-      image: "/update.png", 
+      image: "/nextstep.jpeg", 
       tags: ["HTML", "CSS", "JavaScript"],
-      github: "#",
-      live: "#"
+      github: "https://github.com/Danish8152/NextStep-AI",
+      live: "https://nextstep-ai-psi.vercel.app"
     },
     {
       title: "SkilSwap - Learning Platform",
