@@ -15,7 +15,7 @@ const Projects = () => {
       live: "https://quick-quiz-puce.vercel.app"
     },
     {
-      title: " QuickQuiz - Quiz Platform",
+      title: " NurtaVue",
       description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
       image: QuickQuiz,
       tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
