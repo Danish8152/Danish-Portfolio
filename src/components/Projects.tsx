@@ -15,12 +15,12 @@ const Projects = () => {
       live: "https://quick-quiz-puce.vercel.app"
     },
     {
-      title: " NurtaVue",
-      description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
-      image: QuickQuiz,
-      tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
-      github: "https://github.com/Danish8152/QuickQuiz",
-      live: "https://quick-quiz-puce.vercel.app"
+      title: " NurtaVue - Food Nutrition Analyser",
+      description: "A mobile-first barcode scanning platform that transforms complex nutrition labels into clear, instant health insights for smarter food decisions.",
+      image: "/NutraVue.png",
+      tags: ["HTML", "CSS", "JavaScript", "Node.js"],
+      github: "https://github.com/Danish8152/NutraVue",
+      live: "https://nutra-vue.vercel.app"
     },
     {
       title: "NextStep AI - AI Driven Career Platform",

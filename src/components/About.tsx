@@ -3,7 +3,7 @@ import { Badge } from "@/components/ui/badge";
 
 const About = () => {
   const skills = [
-    "HTML", "CSS", "JavaScript", "React.js", "Node.js", "MongoDB", 
+    "HTML", "CSS", "Bootstap", "Tailwind", "JavaScript", "React.js", "Node.js", "Express.js", "MongoDB", 
     "WordPress", "Git", "GitHub", "Figma"
   ];
 
@@ -50,7 +50,7 @@ const About = () => {
 
           <div>
             <h3 className="text-2xl font-bold mb-6">Skills & Technologies</h3>
-            <div className="flex flex-wrap gap-3">
+            <div className="flex flex-wrap gap-3 pe-4">
               {skills.map((skill, index) => (
                 <Badge key={index} variant="secondary" className="text-sm py-2 px-4">
                   {skill}
