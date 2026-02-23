@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
+import { url } from "inspector";
 import { Github, Linkedin, Mail, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
@@ -70,10 +71,10 @@ const Contact = () => {
             </div>
 
             <div className="flex gap-4 mt-8">
-              <Button variant="outline" size="icon" className="glow-on-hover">
+              <Button variant="outline" size="icon" className="glow-on-hover" onClick={() => window.open("https://github.com/Danish8152", "_blank")}>
                 <Github className="h-5 w-5" />
               </Button>
-              <Button variant="outline" size="icon" className="glow-on-hover">
+              <Button variant="outline" size="icon" className="glow-on-hover" onClick={() => window.open("https://www.linkedin.com/in/danish-498875293", "_blank")}>
                 <Linkedin className="h-5 w-5" />
               </Button>
               <Button variant="outline" size="icon" className="glow-on-hover" onClick={openGmail}>

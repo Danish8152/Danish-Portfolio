@@ -38,10 +38,10 @@ const Hero = () => {
         </div>
 
         <div className="flex gap-6 justify-center mb-16">
-          <Button variant="ghost" size="icon" className="glow-on-hover">
+          <Button variant="ghost" size="icon" className="glow-on-hover" onClick={() => window.open("https://github.com/Danish8152", "_blank")}>
             <Github className="h-6 w-6" />
           </Button>
-          <Button variant="ghost" size="icon" className="glow-on-hover">
+          <Button variant="ghost" size="icon" className="glow-on-hover" onClick={() => window.open("https://www.linkedin.com/in/danish-498875293", "_blank")}>
             <Linkedin className="h-6 w-6" />
           </Button>
           <Button variant="ghost" size="icon" className="glow-on-hover" onClick={openGmail}>
