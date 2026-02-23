@@ -34,7 +34,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16">
           <div className="font-bold text-xl">
-            <span className="text-gradient">Portfolio</span>
+            <span className="text-gradient">Danish</span>
           </div>
 
           {/* Desktop Navigation */}

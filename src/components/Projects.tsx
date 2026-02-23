@@ -15,6 +15,14 @@ const Projects = () => {
       live: "https://quick-quiz-puce.vercel.app"
     },
     {
+      title: " QuickQuiz - Quiz Platform",
+      description: "Interactive online quiz platform with analytics, timed mode, and teacher features for managing quizzes and tracking student performance.",
+      image: QuickQuiz,
+      tags: ["HTML", "CSS", "JavaScript", "Node.js", "MongoDB"],
+      github: "https://github.com/Danish8152/QuickQuiz",
+      live: "https://quick-quiz-puce.vercel.app"
+    },
+    {
       title: "NextStep AI - AI Driven Career Platform",
       description: "Transform your career aspirations into reality with personalized AI guidance, curated learning paths, and comprehensive skill development.",
       image: "/nextstep.jpeg", 

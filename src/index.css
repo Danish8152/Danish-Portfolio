@@ -6,48 +6,54 @@
 
 @layer base {
   :root {
-    /* Light theme base colors */
-    --background: 0 0% 100%;
-    --foreground: 222 84% 4.9%;
+    /* Dark theme base colors */
+    --background: 0 0% 0%;
+    /* PURE BLACK */
+    --foreground: 0 0% 100%;
+    /* White text */
 
-    --card: 0 0% 100%;
-    --card-foreground: 222 84% 4.9%;
+    --card: 0 0% 8%;
+    /* Slightly lifted black */
+    --card-foreground: 0 0% 100%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222 84% 4.9%;
+    --popover: 0 0% 8%;
+    --popover-foreground: 0 0% 100%;
 
-    /* Blue & Purple accent system */
-    --primary: 246 83% 58%;
+    --border: 0 0% 18%;
+    --input: 0 0% 18%;
+
+    /* Blue & Purple accent system (kept strong for dark UI) */
+    --primary: 246 83% 65%;
     --primary-foreground: 0 0% 100%;
-    --primary-glow: 268 85% 75%;
+    --primary-glow: 268 85% 70%;
 
-    --secondary: 210 40% 96%;
-    --secondary-foreground: 222 84% 4.9%;
+    --secondary: 217 33% 17%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96%;
-    --muted-foreground: 215 16% 47%;
+    --muted: 217 33% 17%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 268 85% 75%;
-    --accent-foreground: 222 84% 4.9%;
+    --accent: 268 85% 70%;
+    --accent-foreground: 210 40% 98%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 62% 50%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 214 32% 91%;
-    --input: 214 32% 91%;
-    --ring: 246 83% 58%;
+    --border: 217 33% 20%;
+    --input: 217 33% 20%;
+    --ring: 246 83% 65%;
 
     --radius: 0.75rem;
 
-    /* Portfolio-specific tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(246 83% 58%), hsl(268 85% 75%));
-    --card-gradient: linear-gradient(145deg, hsl(0 0% 100%), hsl(210 40% 98%));
-    --text-gradient: linear-gradient(135deg, hsl(246 83% 58%), hsl(268 85% 75%));
-    
-    /* Shadows with primary color */
-    --shadow-primary: 0 20px 40px -12px hsl(246 83% 58% / 0.25);
-    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.1);
-    
+    /* Dark gradients */
+    --hero-gradient: linear-gradient(135deg, hsl(246 83% 65%), hsl(268 85% 70%));
+    --card-gradient: linear-gradient(145deg, hsl(222 47% 14%), hsl(217 33% 17%));
+    --text-gradient: linear-gradient(135deg, hsl(246 83% 65%), hsl(268 85% 70%));
+
+    /* Shadows adjusted for dark mode */
+    --shadow-primary: 0 20px 40px -12px hsl(246 83% 65% / 0.35);
+    --shadow-card: 0 10px 30px -10px hsl(0 0% 0% / 0.6);
+
     /* Animations */
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-bounce: all 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
@@ -61,7 +67,7 @@
 
   body {
     @apply bg-background text-foreground font-sans;
-    background-image: 
+    background-image:
       radial-gradient(circle at 20% 80%, hsl(246 83% 58% / 0.05) 0%, transparent 50%),
       radial-gradient(circle at 80% 20%, hsl(268 85% 75% / 0.05) 0%, transparent 50%);
   }
@@ -72,6 +78,7 @@
 }
 
 @layer components {
+
   /* Hero text gradient effect */
   .text-gradient {
     background: var(--text-gradient);
@@ -84,7 +91,7 @@
   .glow-on-hover {
     transition: var(--transition-smooth);
   }
-  
+
   .glow-on-hover:hover {
     box-shadow: var(--shadow-primary);
     transform: translateY(-2px);
@@ -94,7 +101,7 @@
   .card-hover {
     transition: var(--transition-smooth);
   }
-  
+
   .card-hover:hover {
     transform: translateY(-8px);
     box-shadow: var(--shadow-card);
@@ -102,9 +109,12 @@
 
   /* Floating animation */
   @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
       transform: translateY(0px);
     }
+
     50% {
       transform: translateY(-10px);
     }
@@ -120,7 +130,7 @@
     background: hsl(var(--card));
     border-radius: var(--radius);
   }
-  
+
   .gradient-border::before {
     content: '';
     position: absolute;
