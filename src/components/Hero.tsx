@@ -33,7 +33,7 @@ const Hero = () => {
           </Button>
           <Button variant="outline" size="lg" className="glow-on-hover" onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}>
             <Mail className="mr-2 h-5 w-5" />
-            Get I Touch
+            Get In Touch
           </Button>
         </div>
 
